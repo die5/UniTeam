@@ -106,6 +106,8 @@
     <Compile Include="Assets\2.Scripts\Managers\Data\GameData.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameDataLoader.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Singleton.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\CharacterSlotPresenter.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\LoginPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\1.Scenes\MainScenes\Readme.txt" />

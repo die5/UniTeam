@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/1.Scenes/UnitTestScenes/UI/Minimap.unity
+  isLoaded: 1
+  isActive: 1

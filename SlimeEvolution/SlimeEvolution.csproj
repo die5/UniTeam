@@ -106,6 +106,11 @@
     <Compile Include="Assets\2.Scripts\Managers\Data\GameData.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameDataLoader.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Singleton.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\MinimapUIPresenter.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\Radar.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\TestMoveUnit.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\SoundManager.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\TestSoundButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\1.Scenes\MainScenes\Readme.txt" />

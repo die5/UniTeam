@@ -73,8 +73,14 @@
     <Reference Include="UnityEngine.VR">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Compat">
-      <HintPath>Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+    <Reference Include="Firebase.App">
+      <HintPath>Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
@@ -82,20 +88,14 @@
     <Reference Include="Google.Sharpen">
       <HintPath>Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Platform">
-      <HintPath>Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tasks">
-      <HintPath>Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
-    </Reference>
     <Reference Include="Firebase.Database">
       <HintPath>Assets/Firebase/Plugins/Mono/Firebase.Database.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Auth">
-      <HintPath>Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    <Reference Include="Unity.Compat">
+      <HintPath>Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.App">
-      <HintPath>Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    <Reference Include="Unity.Tasks">
+      <HintPath>Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
@@ -122,6 +122,7 @@
     <None Include="Assets\2.Scripts\Skills\Readme.txt" />
     <None Include="Assets\2.Scripts\Systems\Readme.txt" />
     <None Include="Assets\2.Scripts\UI\Readme.txt" />
+    <None Include="Assets\2.Scripts\UnitTest\Readme.txt" />
     <None Include="Assets\3.Characters\Enemys\Prefabs\Readme.txt" />
     <None Include="Assets\3.Characters\Enemys\Readme.txt" />
     <None Include="Assets\3.Characters\NPCs\Prefabs\Readme.txt" />

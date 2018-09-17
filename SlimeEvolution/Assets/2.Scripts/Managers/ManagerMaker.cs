@@ -9,6 +9,7 @@ namespace SlimeEvolution.GameSystem
         void Awake()
         {
             DataManager.Instance.MakeSingleTon();
+            StageManager.Instance.MakeSingleTon();
         }
 
     }

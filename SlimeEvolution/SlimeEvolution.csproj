@@ -102,6 +102,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemy.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyAttack.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyMovementState.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemySpecialSkill.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Goblin.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Skeleton.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Warrior.cs" />
     <Compile Include="Assets\2.Scripts\GlobalVariable\GlobalVariable.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameDataLoader.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ManagerMaker.cs" />
@@ -118,11 +125,11 @@
     <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\MinimapUIPresenter.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\Radar.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\TestMoveUnit.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\minimaptest\MinimapPresenter.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\SoundManager.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\TestSoundButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\1.Scenes\MainScenes\Readme.txt" />
     <None Include="Assets\1.Scenes\Readme.txt" />
     <None Include="Assets\1.Scenes\UnitTestScenes\Enemy\Readme.txt" />
     <None Include="Assets\1.Scenes\UnitTestScenes\Player\Readme.txt" />

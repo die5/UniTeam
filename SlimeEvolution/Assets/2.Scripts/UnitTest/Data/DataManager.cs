@@ -26,12 +26,10 @@ namespace SlimeEvolution.GameSystem
 
         private GameDataLoader gameDataLoader;
         // Use this for initialization
-        void Awake()
+        void Start()
         {
             gameData = new GameData();
             gameDataLoader = new GameDataLoader();
-            CreateNewAccount("jun", "353535");
-            DontDestroyOnLoad(gameObject);
         }
 
         public void CreateNewAccount(string id, string password)

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _instance;
-
     private static object _lock = new object();
 
     public static T Instance
@@ -61,6 +60,11 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     }
 
     private static bool applicationIsQuitting = false;
+
+    public void MakeSingleTon()
+    {
+    }
+
     /// <summary>
     /// 유니티가 종료되면 임의의 순서로 객체를 파괴합니다.
     /// 원칙적으로 싱글톤은 응용 프로그램이 종료될때만 파괴됩니다.

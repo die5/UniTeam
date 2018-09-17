@@ -45,7 +45,7 @@ namespace SlimeEvolution.GameSystem
                     {
                         if (id.Equals(datasnapshot.Key))
                         {
-                            DataManager.Instance.SignUpResultCallback("이미 계정이 존재합니다");
+                            DataManager.Instance.SignUpResultCallback("이미 같은 계정이 존재합니다");
                             //LogManager.Instance.UserDebug(LogColor.Magenta, GetType().Name, "이미 계정이 존재합니다");
                             return;
                         }
@@ -63,7 +63,7 @@ namespace SlimeEvolution.GameSystem
                         }
                         else if (signUpTask.IsCompleted)
                         {
-                            DataManager.Instance.LoginResultCallback("성공");
+                            DataManager.Instance.SignUpResultCallback("성공");
                             //LogManager.Instance.UserDebug(LogColor.Magenta, GetType().Name, "회원가입 성공");
                             return;
                         }
@@ -113,7 +113,7 @@ namespace SlimeEvolution.GameSystem
                             }
                         }
                     }
-                    DataManager.Instance.LoginResultCallback("존재하지 않는 아이디입니다.");
+                    DataManager.Instance.LoginResultCallback("아이디가 업습니다.");
                     //LogManager.Instance.UserDebug(LogColor.Magenta, GetType().Name, "존재하지 않는 아이디입니다.");
                     return;
                 }

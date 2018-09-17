@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.5f1</UnityVersion>
@@ -102,12 +103,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemy.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyAttack.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyMovementState.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemySpecialSkill.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Goblin.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Skeleton.cs" />
+    <Compile Include="Assets\2.Scripts\Characters\Enemy\Warrior.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\DataManager.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameData.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameDataLoader.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Singleton.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\CharacterSlotPresenter.cs" />
     <Compile Include="Assets\2.Scripts\UnitTest\LoginPresenter.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\MinimapUIPresenter.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\Radar.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\TestMoveUnit.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestMinimap\minimaptest\MinimapPresenter.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\SoundManager.cs" />
+    <Compile Include="Assets\2.Scripts\UnitTest\TestSoundManager\TestSoundButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\1.Scenes\MainScenes\Readme.txt" />

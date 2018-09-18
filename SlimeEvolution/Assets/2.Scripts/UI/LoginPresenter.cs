@@ -31,9 +31,10 @@ namespace SlimeEvolution.UI
         [SerializeField]
         private GameObject loginPanel;
         [SerializeField]
-        private GameObject signUpSuccessPanel;
+        private GameObject loginSuccessPanel;
         [SerializeField]
-        private GameObject charaterSlotPanel;
+        private GameObject signUpSuccessPanel;
+        
 
         void Start()
         {
@@ -74,7 +75,7 @@ namespace SlimeEvolution.UI
             if (Text.Equals("성공"))
             {
                 loginPanel.SetActive(false);
-                charaterSlotPanel.SetActive(true);
+                loginSuccessPanel.SetActive(true);
             }
             else
                 loginAlert.text = Text;

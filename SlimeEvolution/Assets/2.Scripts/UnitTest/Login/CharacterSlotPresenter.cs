@@ -7,6 +7,11 @@ namespace SlimeEvolution.UI
     public class CharacterSlotPresenter : MonoBehaviour
     {
 
+        public void SetUpCharacterSlot()
+        {
+
+        }
+
 
     }
 }

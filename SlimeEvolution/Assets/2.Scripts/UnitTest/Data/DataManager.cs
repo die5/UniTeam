@@ -17,20 +17,32 @@ namespace SlimeEvolution.GameSystem
         public delegate void SignUpResult(string Text);
         public LoginResult SignUpResultCallback;
 
-        private GameData gameData;
-
+        GameData gameData;
+        int playerNumber;
         public GameData GameData
         {
             get { return gameData; }
         }
 
-        private GameDataLoader gameDataLoader;
-        // Use this for initialization
+        GameDataLoader gameDataLoader;
+
         void Start()
         {
             gameData = new GameData();
             gameDataLoader = new GameDataLoader();
         }
+
+        /// <summary>
+        /// 슬롯 선택시 슬롯에 해당하는 번호를 설정함.
+        /// </summary>
+        /// <param name="playerNumber"></param>
+        public void ChoicePlayer(int slotNumber, bool isNewCharacter)
+        {
+            if(isNewCharacter)
+                gameData.PlayerList[slotNumber] = new PlayerData(slotNumber);
+
+            playerNumber = slotNumber;
+        } 
 
         public void CreateNewAccount(string id, string password)
         {
@@ -42,22 +54,26 @@ namespace SlimeEvolution.GameSystem
             gameDataLoader.LoadLoginDataFromDB(id, password);
         }
 
-        public void SaveGameData(GameData gameData, bool ShouldSaveForDB)
+        public void SaveGameData(GameData gameData)
         {
             this.gameData = gameData;
-
-            if (ShouldSaveForDB)
-            {
-                gameDataLoader.SetUpdateInDB(gameData);
-            }
         }
 
-        public void ResetData()
+        public void SaveGameDataInDB()
         {
-            gameData.PlayerData = new PlayerData();
             gameDataLoader.SetUpdateInDB(gameData);
         }
 
+        public void ResetData(int slotNum)
+        {
+            gameData.PlayerList[slotNum] = new PlayerData();
+            gameDataLoader.SetUpdateInDB(gameData);
+        }
+
+        public void SaveStatData(StatData statData)
+        {
+            gameData.PlayerList[playerNumber].statData = statData;
+        }
         /// <summary>
         /// AssetBundle의 키 값을 비교하여 업데이트 유무를 Bool형식으로 리턴함.(사용자는 꼭 Enum순서대로 함수를 사용할것. 
         /// ex) Player -> Skill(o) , Player -> Enemy(x))

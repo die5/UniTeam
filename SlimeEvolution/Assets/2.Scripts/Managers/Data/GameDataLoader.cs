@@ -15,8 +15,8 @@ namespace SlimeEvolution.GameSystem
     /// </summary>
     public class GameDataLoader
     {
-        private DatabaseReference reference;
-        private string jsonData;
+        DatabaseReference reference;
+        string jsonData;
         public GameDataLoader()
         {
             FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://slimeevolution-18581.firebaseio.com");
@@ -100,7 +100,7 @@ namespace SlimeEvolution.GameSystem
                             Dictionary<string, object> userDataDictionary = (Dictionary<string, object>)datasnapshot.Value;
                             if (password.Equals(datasnapshot.Child("UserPassword").Value))
                             {
-                                DataManager.Instance.SaveGameData(JsonUtility.FromJson<GameData>(datasnapshot.GetRawJsonValue()), false);
+                                DataManager.Instance.SaveGameData(JsonUtility.FromJson<GameData>(datasnapshot.GetRawJsonValue()));
                                 DataManager.Instance.LoginResultCallback("성공");
                                 //LogManager.Instance.UserDebug(LogColor.Magenta, GetType().Name, "로그인 성공");
                                 return;

@@ -3,8 +3,22 @@ using System;
 
 namespace SlimeEvolution.GameSystem
 {
+    [Serializable]
+    public struct StatData
+    {
+        public int HealthPoint;
+        public int ManaPoint;
+        public int SkillPoint;
+        public int StrikingPower;
+        public int DefensivePower;
+        public int Critical;
+        public int Experience;
+    }
 
-
+    public struct ItemData
+    {
+        
+    }
 
     /// <summary>
     /// 작성자 : 박준명
@@ -12,12 +26,7 @@ namespace SlimeEvolution.GameSystem
     [Serializable]
     public class PlayerData
     {
-        public string Name = "Jun";
-        public int Level = 1;
-        public int Hp = 50;
-        public int Mp = 30;
-        public int AD = 15;
-        public int DEF = 4;
+        public StatData statData;
     }
 
     /// <summary>

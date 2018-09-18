@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/1.Scenes/UnitTestScenes/UI/Minimap.unity
+=======
+- path: Assets/1.Scenes/UnitTestScenes/UI/Inventory/TestInven.unity
+>>>>>>> f9d21652f8a52a383caf8e8e559b5d75300b639e
   isLoaded: 1
   isActive: 1

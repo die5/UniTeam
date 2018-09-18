@@ -51,28 +51,28 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
-      <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.App">
       <HintPath>Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
@@ -99,17 +99,18 @@
       <HintPath>Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\DragDropItemTest.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\InventorySlot.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\Item.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\ItemPickUp.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestEquipment.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestEquipmentManager.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestInventory.cs" />
+    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestInventoryUI.cs" />
     <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemys\Enemy.cs" />
     <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemys\Goblin.cs" />
     <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemys\Skeleton.cs" />
@@ -123,23 +124,6 @@
     <Compile Include="Assets\2.Scripts\Characters\Enemy\States\EnemyState.cs" />
     <Compile Include="Assets\2.Scripts\Characters\Enemy\States\Idle.cs" />
     <Compile Include="Assets\2.Scripts\Characters\Enemy\States\Return.cs" />
-=======
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\DragDropItemTest.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\InventorySlot.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\Item.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\ItemPickUp.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestEquipment.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestEquipmentManager.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestInventory.cs" />
-    <Compile Include="Assets\1.Scenes\UnitTestScenes\UI\Inventory\Script\TestInventoryUI.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\Enemy.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyAttack.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemyMovementState.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\EnemySpecialSkill.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\Goblin.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\Skeleton.cs" />
-    <Compile Include="Assets\2.Scripts\Characters\Enemy\Warrior.cs" />
->>>>>>> f9d21652f8a52a383caf8e8e559b5d75300b639e
     <Compile Include="Assets\2.Scripts\GlobalVariable\GlobalVariable.cs" />
     <Compile Include="Assets\2.Scripts\Managers\Data\GameDataLoader.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ManagerMaker.cs" />

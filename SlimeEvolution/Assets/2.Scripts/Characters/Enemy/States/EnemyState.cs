@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyState : MonoBehaviour {
+public abstract class EnemyState
+{
+    protected Enemy state;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    protected abstract void StartBehavior();
+
+    protected abstract void ProceedBehavior();
+
+    protected abstract void EndBehavior();
+    
 }

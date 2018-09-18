@@ -9,7 +9,7 @@ public class SpecialSkillIMP
 
 public class RecoverHP : SpecialSkillIMP
 {
-
+    //생성자
 }
 
 public class Defend : SpecialSkillIMP

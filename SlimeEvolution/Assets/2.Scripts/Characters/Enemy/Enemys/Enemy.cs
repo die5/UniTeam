@@ -9,16 +9,15 @@ public abstract class Enemy : MonoBehaviour
     protected float movingSpeed;
     protected EnemyState state;
     protected SpecialSkillIMP skill;
-    protected AttackIMP attack;
+    protected AttackIMP attack1;
+    protected AttackIMP attack2;
     protected MovementIMP movement;
+    protected Rigidbody rigidbody;
+    
 
-    protected abstract void Attack();
-    protected abstract void Move();
-    protected abstract void UseSkill();
-    protected void Death()
+    private void Start()
     {
-
+        rigidbody = GetComponent<Rigidbody>();
     }
 
-	
 }
